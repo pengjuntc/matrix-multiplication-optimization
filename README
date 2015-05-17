@@ -1,0 +1,7 @@
+//Written by Jun Peng. 02/19/2015
+
+Please supply benchmark.c in order to run the program.
+
+After that, run the shell script final.sh to compile and run the code.
+
+command: ./final.sh
