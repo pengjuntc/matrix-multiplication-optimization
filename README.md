@@ -17,4 +17,6 @@ command to test the program: ./run.sh
 
 
 4. Convert depb() to load the current block of B being worked on into a local BK x BJ buffer that is 32-byte aligned and passed to calls to depbb(). Also change your vector subblock code to use aligned loads (_mm256_load_pd()) when accessing B instead of unaligned loads. To declare an aligned array, use a declaration like this:
-static double blocal[BK][BJ]  __attribute__ ((aligned (32)));;
+```
+static double blocal[BK][BJ]  __attribute__ ((aligned (32)));
+```
